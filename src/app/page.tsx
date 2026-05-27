@@ -284,79 +284,6 @@ export default function ProposalPage() {
 
         <Divider />
 
-        {/* ── INDUSTRY EXPERIENCE ────────────────────────── */}
-        <section>
-          <div className="text-center mb-14">
-            <Label text="Industry Experience" />
-            <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-4" style={{ color: K }}>
-              Trusted Across Australia
-            </h2>
-            <p className="text-zinc-500 max-w-xl mx-auto text-[15px] leading-relaxed">
-              Dynamic Code works with operational businesses, hospitality groups, scalable startups, and
-              enterprise-focused brands across Australia — delivering custom technology, digital presence,
-              and growth systems built for commercial outcomes.
-            </p>
-          </div>
-
-          {/* Logo grid — clean, minimal, whitespace-heavy */}
-          <div className="border border-zinc-200 rounded-2xl overflow-hidden mb-6">
-            {[
-              ["LMCT+", "Circl Group", "ChekkU", "Cunnies Gummies"],
-              ["EBT", "Flipside", "XXXX Gold", "Star Hotels"],
-              ["Lion", "Value Liquor Group", "Liquor Legends", "Starlink"],
-            ].map((row, ri) => (
-              <div key={ri} className={`grid grid-cols-2 sm:grid-cols-4 ${ri < 2 ? "border-b border-zinc-200" : ""}`}>
-                {row.map((name, ci) => {
-                  const isStarlink = name === "Starlink";
-                  return (
-                    <div
-                      key={name}
-                      className={`group flex flex-col items-center justify-center py-8 px-4 bg-white hover:bg-zinc-50 transition-colors duration-150 ${ci < row.length - 1 ? "border-r border-zinc-200" : ""}`}
-                    >
-                      <span
-                        className="font-semibold text-sm sm:text-base tracking-tight text-center transition-colors duration-150 group-hover:text-zinc-900"
-                        style={{ color: "#D4D4D8" }}
-                      >
-                        {name}
-                        {isStarlink && (
-                          <span className="block text-[9px] font-normal tracking-wider uppercase text-zinc-400 mt-1">Integration Partner</span>
-                        )}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-[11px] text-zinc-400 leading-relaxed max-w-2xl mx-auto">
-            Starlink: integrated booking and workflow systems connected with Starlink order flows.
-            Not all engagements represent a direct client relationship — some reflect integration and build partnerships.
-          </p>
-
-          {/* Metrics strip — full black */}
-          <div className="rounded-2xl mt-10 overflow-hidden" style={{ backgroundColor: K }}>
-            <div className="grid grid-cols-2 md:grid-cols-4">
-              {[
-                { v: "20+", l: "Custom Systems & Integrations" },
-                { v: "8+", l: "Industries Across Australia" },
-                { v: "100%", l: "Australia-Wide Delivery" },
-                { v: "∞", l: "Scalable Web & Software" },
-              ].map(({ v, l }, i) => (
-                <div
-                  key={l}
-                  className={`py-10 px-8 text-center ${i < 3 ? "border-r border-white/5" : ""}`}
-                >
-                  <p className="text-3xl font-bold tracking-tight mb-2" style={{ color: A }}>{v}</p>
-                  <p className="text-xs text-zinc-500 leading-snug">{l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </section>
-
-        <Divider />
-
         {/* ── 02 UNDERSTANDING YOUR BUSINESS ─────────────── */}
         <section>
           <Label text="02 — Understanding Your Business" />
@@ -774,6 +701,74 @@ export default function ProposalPage() {
                 <p className="text-xs text-zinc-400 leading-relaxed">This proposal is valid for 30 days from the date of issue. Pricing and timeline are subject to confirmation upon scope review.</p>
               </div>
             </Card>
+          </div>
+        </section>
+
+        {/* ── INDUSTRY EXPERIENCE ────────────────────────── */}
+        <section>
+          <Divider />
+          <div className="text-center mb-14">
+            <Label text="Industry Experience" />
+            <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] mb-4" style={{ color: K }}>
+              Trusted Across Australia
+            </h2>
+            <p className="text-zinc-500 max-w-xl mx-auto text-[15px] leading-relaxed">
+              Dynamic Code works with operational businesses, hospitality groups, scalable startups, and
+              enterprise-focused brands across Australia — delivering custom technology, digital presence,
+              and growth systems built for commercial outcomes.
+            </p>
+          </div>
+
+          {/* Logo grid */}
+          <div className="border border-zinc-200 rounded-2xl overflow-hidden mb-6">
+            {[
+              ["LMCT+", "Circl Group", "ChekkU", "Cunnies Gummies"],
+              ["EBT", "Flipside", "XXXX Gold", "Star Hotels"],
+              ["Lion", "Value Liquor Group", "Liquor Legends", "Starlink"],
+            ].map((row, ri) => (
+              <div key={ri} className={`grid grid-cols-2 sm:grid-cols-4 ${ri < 2 ? "border-b border-zinc-200" : ""}`}>
+                {row.map((name, ci) => {
+                  const isStarlink = name === "Starlink";
+                  return (
+                    <div
+                      key={name}
+                      className={`group flex flex-col items-center justify-center py-8 px-4 bg-white hover:bg-zinc-50 transition-colors duration-150 ${ci < row.length - 1 ? "border-r border-zinc-200" : ""}`}
+                    >
+                      <span
+                        className="font-semibold text-sm sm:text-base tracking-tight text-center transition-colors duration-150 group-hover:text-zinc-900"
+                        style={{ color: "#D4D4D8" }}
+                      >
+                        {name}
+                        {isStarlink && (
+                          <span className="block text-[9px] font-normal tracking-wider uppercase text-zinc-400 mt-1">Integration Partner</span>
+                        )}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-[11px] text-zinc-400 leading-relaxed max-w-2xl mx-auto">
+            Starlink: integrated booking and workflow systems connected with Starlink order flows.
+            Not all engagements represent a direct client relationship — some reflect integration and build partnerships.
+          </p>
+
+          {/* Metrics strip */}
+          <div className="rounded-2xl mt-10 overflow-hidden" style={{ backgroundColor: K }}>
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {[
+                { v: "20+", l: "Custom Systems & Integrations" },
+                { v: "8+", l: "Industries Across Australia" },
+                { v: "100%", l: "Australia-Wide Delivery" },
+                { v: "∞", l: "Scalable Web & Software" },
+              ].map(({ v, l }, i) => (
+                <div key={l} className={`py-10 px-8 text-center ${i < 3 ? "border-r border-white/5" : ""}`}>
+                  <p className="text-3xl font-bold tracking-tight mb-2" style={{ color: A }}>{v}</p>
+                  <p className="text-xs text-zinc-500 leading-snug">{l}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
