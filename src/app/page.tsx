@@ -353,38 +353,6 @@ export default function ProposalPage() {
             </div>
           </div>
 
-          {/* Why Dynamic Code */}
-          <div className="grid md:grid-cols-2 gap-12 mt-14 items-start">
-            <div>
-              <Label text="Why Businesses Choose Us" />
-              <h3 className="text-2xl md:text-3xl font-bold tracking-[-0.03em] mb-4" style={{ color: K }}>
-                Why Businesses Work With Dynamic Code
-              </h3>
-              <p className="text-zinc-500 text-[15px] leading-relaxed">
-                We sit at the intersection of technology, marketing, and operations. The systems we build
-                don&apos;t just look good — they generate pipeline, reduce manual work, and compound in value over time.
-              </p>
-            </div>
-            <div className="space-y-2">
-              {[
-                { t: "Custom Operational Systems", d: "Purpose-built software and integrations aligned to how your business actually runs — not generic tools bolted together." },
-                { t: "Scalable Technology Thinking", d: "Architecture designed to grow with you. We build foundations, not one-offs." },
-                { t: "Fast Development & Rollout", d: "Two-week delivery timelines for structured engagements. Speed without sacrificing quality." },
-                { t: "Marketing + Technology Combined", d: "Strategy, copy, design, and build under one roof. No agency handoffs, no misaligned outputs." },
-                { t: "SEO & Lead Generation Expertise", d: "We build websites that rank and convert — not just websites that exist." },
-                { t: "Workflow Automation & Integrations", d: "From booking systems to CRM pipelines — we connect your tools and eliminate manual process." },
-                { t: "Cross-Industry Operational Experience", d: "Hospitality, retail, construction, tech, beverage — we understand how operational businesses work." },
-              ].map(({ t, d }) => (
-                <div key={t} className="flex gap-3 p-3.5 rounded-xl hover:bg-zinc-50 transition-colors duration-150 group">
-                  <span className="w-1 h-1 rounded-full mt-2 shrink-0" style={{ backgroundColor: A }} />
-                  <div>
-                    <p className="font-semibold text-sm text-zinc-900">{t}</p>
-                    <p className="text-xs text-zinc-500 leading-relaxed mt-0.5">{d}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         <Divider />
@@ -806,6 +774,42 @@ export default function ProposalPage() {
                 <p className="text-xs text-zinc-400 leading-relaxed">This proposal is valid for 30 days from the date of issue. Pricing and timeline are subject to confirmation upon scope review.</p>
               </div>
             </Card>
+          </div>
+        </section>
+
+        {/* ── WHY DYNAMIC CODE ───────────────────────────── */}
+        <section>
+          <Divider />
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <Label text="Why Businesses Choose Us" />
+              <h3 className="text-2xl md:text-3xl font-bold tracking-[-0.03em] mb-4" style={{ color: K }}>
+                Why Businesses Work With Dynamic Code
+              </h3>
+              <p className="text-zinc-500 text-[15px] leading-relaxed">
+                We sit at the intersection of technology, marketing, and operations. The systems we build
+                don&apos;t just look good — they generate pipeline, reduce manual work, and compound in value over time.
+              </p>
+            </div>
+            <div className="space-y-2">
+              {[
+                { t: "Custom Operational Systems", d: "Purpose-built software and integrations aligned to how your business actually runs — not generic tools bolted together." },
+                { t: "Scalable Technology Thinking", d: "Architecture designed to grow with you. We build foundations, not one-offs." },
+                { t: "Fast Development & Rollout", d: "Two-week delivery timelines for structured engagements. Speed without sacrificing quality." },
+                { t: "Marketing + Technology Combined", d: "Strategy, copy, design, and build under one roof. No agency handoffs, no misaligned outputs." },
+                { t: "SEO & Lead Generation Expertise", d: "We build websites that rank and convert — not just websites that exist." },
+                { t: "Workflow Automation & Integrations", d: "From booking systems to CRM pipelines — we connect your tools and eliminate manual process." },
+                { t: "Cross-Industry Operational Experience", d: "Hospitality, retail, construction, tech, beverage — we understand how operational businesses work." },
+              ].map(({ t, d }) => (
+                <div key={t} className="flex gap-3 p-3.5 rounded-xl hover:bg-zinc-50 transition-colors duration-150">
+                  <span className="w-1 h-1 rounded-full mt-2 shrink-0" style={{ backgroundColor: A }} />
+                  <div>
+                    <p className="font-semibold text-sm text-zinc-900">{t}</p>
+                    <p className="text-xs text-zinc-500 leading-relaxed mt-0.5">{d}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
