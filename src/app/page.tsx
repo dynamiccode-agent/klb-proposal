@@ -176,7 +176,7 @@ export default function ProposalPage() {
         <div className="relative z-10 flex items-center justify-between px-8 md:px-14 pt-10 pb-0">
           <DCLogo light className="h-6 w-auto" />
           <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-zinc-600">
-            Confidential Proposal · May 2026
+            Confidential Proposal, May 2026
           </span>
         </div>
 
@@ -201,7 +201,7 @@ export default function ProposalPage() {
           </h1>
 
           <p className="text-zinc-400 max-w-xl leading-relaxed text-base mb-14">
-            A strategic digital presence and lead generation system — designed to establish authority,
+            A strategic digital presence and lead generation system,designed to establish authority,
             win tenders, and grow your consultancy across Queensland and beyond.
           </p>
 
@@ -223,7 +223,7 @@ export default function ProposalPage() {
         {/* Cover footer */}
         <div className="relative z-10 px-8 md:px-14 py-8 border-t border-white/5">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-xs text-zinc-600 max-w-5xl mx-auto w-full">
-            <span>KLB Consulting Group · WHS & ISO Compliance · Queensland</span>
+            <span>KLB Consulting Group, WHS & ISO Compliance, Queensland</span>
             <span>dynamiccode.com.au</span>
           </div>
         </div>
@@ -234,7 +234,7 @@ export default function ProposalPage() {
 
         {/* ── 01 EXECUTIVE SUMMARY ───────────────────────── */}
         <section>
-          <Label text="01 — Executive Summary" />
+          <Label text="01" />
           <H2>Building a Digital Foundation<br />That Works as Hard as You Do</H2>
           <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-3 space-y-4">
@@ -249,7 +249,7 @@ export default function ProposalPage() {
                 doesn&apos;t match the quality of the work delivered on the ground.
               </p>
               <p className="text-zinc-600 leading-relaxed text-[15px]">
-                This proposal outlines a strategic digital engagement — not a brochure website — designed to
+                This proposal outlines a strategic digital engagement,not a brochure website,designed to
                 establish authority, generate inbound enquiries, support your new business development staff,
                 and position KLB as the premium compliance partner for civil contractors across Queensland.
               </p>
@@ -257,7 +257,7 @@ export default function ProposalPage() {
                 <p className="text-sm font-semibold text-zinc-900 mb-1">Our recommendation</p>
                 <p className="text-sm text-zinc-600 leading-relaxed">
                   A professionally designed, SEO-optimised website with structured lead capture, a clear capability
-                  statement, and digital infrastructure that supports growth — delivered within two weeks.
+                  statement, and digital infrastructure that supports growth,delivered within two weeks.
                 </p>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function ProposalPage() {
 
         {/* ── 02 UNDERSTANDING YOUR BUSINESS ─────────────── */}
         <section>
-          <Label text="02 — Understanding Your Business" />
+          <Label text="02" />
           <H2>Where KLB Consulting<br />Sits in the Market</H2>
           <div className="grid md:grid-cols-2 gap-5">
             <Card>
@@ -311,32 +311,12 @@ export default function ProposalPage() {
                 {["Civil construction companies in Queensland", "10–50 employees, $2M–$50M turnover", "Companies requiring ISO accreditation for tenders", "Contractors needing embedded WHS support", "Future expansion: Victoria market"].map(t => <Check key={t} text={t} />)}
               </ul>
             </Card>
-            <Card className="md:col-span-2">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-8 h-8 rounded-lg bg-zinc-50 border border-zinc-100 flex items-center justify-center">
-                  <Zap className="w-4 h-4" style={{ color: A }} />
-                </div>
-                <h3 className="font-semibold text-zinc-900">Current Situation & Opportunity</h3>
-              </div>
-              <div className="grid sm:grid-cols-3 gap-6">
-                {[
-                  { l: "Strong Foundation", d: "Recurring consulting relationships already in place. The business works — the digital presence just needs to catch up." },
-                  { l: "Critical Timing", d: "New BD staff onboarding now. A professional digital presence directly supports their ability to close new clients." },
-                  { l: "Competitive Advantage", d: "Most small compliance consultancies have weak digital presences. This is a genuine opportunity to own the space online." },
-                ].map(({ l, d }) => (
-                  <div key={l}>
-                    <p className="font-semibold text-sm text-zinc-900 mb-1">{l}</p>
-                    <p className="text-sm text-zinc-500 leading-relaxed">{d}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
           </div>
         </section>
 
         {/* ── 03 OBJECTIVES ──────────────────────────────── */}
         <section>
-          <Label text="03 — Business Objectives" />
+          <Label text="03" />
           <H2>What We&apos;re Building Towards</H2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -361,16 +341,16 @@ export default function ProposalPage() {
         <section>
           <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: K }}>
             <div className="p-8 md:p-12">
-              <Label text="04 — Why This Matters" />
+              <Label text="04" />
               <h2 className="text-3xl md:text-4xl font-bold tracking-[-0.03em] text-white mb-8 leading-[1.1]">
                 Why Digital Credibility Changes<br />
                 <span style={{ color: A }}>Everything in Civil Construction</span>
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
                 {[
-                  { icon: Building2, t: "Tenders Are Won Before the Meeting", d: "Procurement managers and safety officers research compliance consultants online before making contact. An outdated or absent web presence is a trust signal — the wrong kind. A professional website with clear credentials gives you a head start before a single word is spoken." },
-                  { icon: Globe, t: "Your Clients Are Searching Right Now", d: "Civil contractors actively search for 'WHS consultant Queensland', 'ISO 45001 compliance civil', and 'safety management systems'. If KLB isn't visible in those results, your competitors are. SEO isn't a bonus — it's how inbound leads become predictable." },
-                  { icon: Award, t: "Digital Trust = Commercial Trust", d: "The civil construction industry is relationship-driven — but those relationships now start online. A premium digital presence signals that KLB operates at the same standard you demand from your clients: professionally, systematically, with attention to detail." },
+                  { icon: Building2, t: "Tenders Are Won Before the Meeting", d: "Procurement managers and safety officers research compliance consultants online before making contact. An outdated or absent web presence is a trust signal,the wrong kind. A professional website with clear credentials gives you a head start before a single word is spoken." },
+                  { icon: Globe, t: "Your Clients Are Searching Right Now", d: "Civil contractors actively search for 'WHS consultant Queensland', 'ISO 45001 compliance civil', and 'safety management systems'. If KLB isn't visible in those results, your competitors are. SEO isn't a bonus,it's how inbound leads become predictable." },
+                  { icon: Award, t: "Digital Trust = Commercial Trust", d: "The civil construction industry is relationship-driven,but those relationships now start online. A premium digital presence signals that KLB operates at the same standard you demand from your clients: professionally, systematically, with attention to detail." },
                 ].map(({ icon: Icon, t, d }) => (
                   <div key={t}>
                     <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4 border" style={{ borderColor: `${A}30`, backgroundColor: `${A}15` }}>
@@ -387,15 +367,15 @@ export default function ProposalPage() {
 
         {/* ── 05 STRATEGY ────────────────────────────────── */}
         <section>
-          <Label text="05 — Recommended Digital Strategy" />
+          <Label text="05" />
           <H2>A Business Growth Tool,<br />Not an Online Brochure</H2>
           <p className="text-zinc-500 text-[15px] mb-8 max-w-2xl leading-relaxed">
-            Most proposals deliver a website. We&apos;re recommending a digital growth system — where every component serves a measurable business outcome.
+            Most proposals deliver a website. We&apos;re recommending a digital growth system,where every component serves a measurable business outcome.
           </p>
           <div className="space-y-3">
             {[
-              { n: "1", icon: Globe, t: "Professional Website — Authority First", items: ["Designed to communicate expertise immediately, not just describe services", "Built around the decision criteria of civil contractors evaluating compliance partners", "Showcases credentials, methodology, and track record in a format tender committees trust", "Mobile-optimised and fast-loading — critical for on-site access by project managers"] },
-              { n: "2", icon: Search, t: "SEO Foundations — Long-Term Visibility", items: ["Keyword research targeting high-intent terms used by civil construction companies", "On-page SEO across all core pages, structured data, and metadata", "Google Business Profile setup and optimisation", "Google Search Console and Analytics configured from day one"] },
+              { n: "1", icon: Globe, t: "Professional Website,Authority First", items: ["Designed to communicate expertise immediately, not just describe services", "Built around the decision criteria of civil contractors evaluating compliance partners", "Showcases credentials, methodology, and track record in a format tender committees trust", "Mobile-optimised and fast-loading,critical for on-site access by project managers"] },
+              { n: "2", icon: Search, t: "SEO Foundations,Long-Term Visibility", items: ["Keyword research targeting high-intent terms used by civil construction companies", "On-page SEO across all core pages, structured data, and metadata", "Google Business Profile setup and optimisation", "Google Search Console and Analytics configured from day one"] },
               { n: "3", icon: Megaphone, t: "Lead Generation Architecture", items: ["Strategic call-to-action placement throughout the site", "Enquiry forms designed to capture qualified leads, not just contact details", "Capability statement download as a lead magnet for tender-stage contacts", "Clear conversion paths from awareness to enquiry"] },
               { n: "4", icon: Layers, t: "Professional Positioning", items: ["Consistent brand presentation across all digital touchpoints", "Capability statement page positioned for both web visitors and document submissions", "Team and expertise section that humanises the business and builds trust", "Industry-specific language that resonates with civil contractors"] },
             ].map(({ n, icon: Icon, t, items }) => (
@@ -425,25 +405,25 @@ export default function ProposalPage() {
 
         {/* ── 06 WEBSITE SCOPE ───────────────────────────── */}
         <section>
-          <Label text="06 — Website Scope" />
+          <Label text="06" />
           <H2>What&apos;s Being Built</H2>
           <div className="grid md:grid-cols-2 gap-5 mb-6">
             <Card>
               <h3 className="font-semibold text-zinc-900 mb-4">Core Features</h3>
               <ul className="space-y-2.5">
-                {["Modern responsive design — mobile, tablet, and desktop", "Fast performance and Core Web Vitals compliance", "SEO foundations built in from the start — not added after", "Enquiry and contact forms with email notifications", "Services pages with clear scope, methodology, and outcomes", "Capability showcase with case study framework", "About/team section that builds trust and credibility", "Google Analytics 4 and Search Console integration"].map(t => <Check key={t} text={t} />)}
+                {["Modern responsive design,mobile, tablet, and desktop", "Fast performance and Core Web Vitals compliance", "SEO foundations built in from the start,not added after", "Enquiry and contact forms with email notifications", "Services pages with clear scope, methodology, and outcomes", "Capability showcase with case study framework", "About/team section that builds trust and credibility", "Google Analytics 4 and Search Console integration"].map(t => <Check key={t} text={t} />)}
               </ul>
             </Card>
             <div className="space-y-5">
               <Card>
                 <h3 className="font-semibold text-zinc-900 mb-4">Technical Standards</h3>
                 <ul className="space-y-2.5">
-                  {["Built on Next.js — fast, scalable, and SEO-optimised", "Deployed on enterprise-grade hosting with SSL", "Mobile-first development approach", "Structured data markup for Google rich results", "Clean code structure for easy future updates"].map(t => <Check key={t} text={t} />)}
+                  {["Built on Next.js,fast, scalable, and SEO-optimised", "Deployed on enterprise-grade hosting with SSL", "Mobile-first development approach", "Structured data markup for Google rich results", "Clean code structure for easy future updates"].map(t => <Check key={t} text={t} />)}
                 </ul>
               </Card>
               <div className="p-4 rounded-xl border border-zinc-200 bg-zinc-50">
                 <p className="text-sm font-semibold text-zinc-900 mb-1">Built to Scale</p>
-                <p className="text-sm text-zinc-500 leading-relaxed">The site architecture supports blog, additional service pages, Victoria market landing pages, and team growth — without starting over.</p>
+                <p className="text-sm text-zinc-500 leading-relaxed">The site architecture supports blog, additional service pages, Victoria market landing pages, and team growth,without starting over.</p>
               </div>
             </div>
           </div>
@@ -451,7 +431,7 @@ export default function ProposalPage() {
 
         {/* ── 07 SITEMAP ─────────────────────────────────── */}
         <section>
-          <Label text="07 — Suggested Sitemap" />
+          <Label text="07" />
           <H2>Proposed Website Structure</H2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
@@ -469,11 +449,11 @@ export default function ProposalPage() {
 
         {/* ── 08 SEO ─────────────────────────────────────── */}
         <section>
-          <Label text="08 — SEO & Google Visibility" />
+          <Label text="08" />
           <H2>Getting Found When It Matters</H2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <p className="text-zinc-600 leading-relaxed text-[15px]">SEO isn&apos;t magic — it&apos;s structure. We build every page to rank, not just to look good. Here&apos;s the foundational strategy included in your build:</p>
+              <p className="text-zinc-600 leading-relaxed text-[15px]">SEO isn&apos;t magic,it&apos;s structure. We build every page to rank, not just to look good. Here&apos;s the foundational strategy included in your build:</p>
               <Card>
                 <h4 className="font-semibold text-zinc-900 mb-4">Included in Website Build</h4>
                 <ul className="space-y-2.5">
@@ -502,7 +482,7 @@ export default function ProposalPage() {
               </Card>
               <div className="p-4 rounded-xl bg-zinc-900 border border-zinc-800">
                 <p className="text-sm font-semibold text-white mb-1">Long-Term Compounding Value</p>
-                <p className="text-sm text-zinc-400 leading-relaxed">SEO traffic is free and grows over time. A well-optimised site continues generating leads without ongoing spend — building a genuine business asset.</p>
+                <p className="text-sm text-zinc-400 leading-relaxed">SEO traffic is free and grows over time. A well-optimised site continues generating leads without ongoing spend,building a genuine business asset.</p>
               </div>
             </div>
           </div>
@@ -510,16 +490,16 @@ export default function ProposalPage() {
 
         {/* ── 09 LEAD GEN ────────────────────────────────── */}
         <section>
-          <Label text="09 — Lead Generation Strategy" />
+          <Label text="09" />
           <H2>Turning Visitors into Enquiries</H2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { icon: Target, t: "Strategic CTAs", d: "Every page has a clear, contextually relevant call-to-action designed to move visitors toward contact — not just inform them." },
-              { icon: FileText, t: "Capability Statement Download", d: "A downloadable capability statement positioned as both a tender tool and a lead magnet — captures contact details of high-intent visitors." },
+              { icon: Target, t: "Strategic CTAs", d: "Every page has a clear, contextually relevant call-to-action designed to move visitors toward contact,not just inform them." },
+              { icon: FileText, t: "Capability Statement Download", d: "A downloadable capability statement positioned as both a tender tool and a lead magnet,captures contact details of high-intent visitors." },
               { icon: Phone, t: "Frictionless Contact", d: "Multiple contact methods with mobile-friendly tap-to-call, making it easy to connect from any device." },
               { icon: BookOpen, t: "Services as Sales Pages", d: "Each service page is structured to address specific client concerns, demonstrate expertise, and prompt enquiry." },
               { icon: LineChart, t: "Analytics & Tracking", d: "Google Analytics 4 configured to track form submissions, phone clicks, and document downloads." },
-              { icon: Globe, t: "BD Staff Support", d: "The site works alongside your new BD hire — a professional reference point to share during outreach and follow-up." },
+              { icon: Globe, t: "BD Staff Support", d: "The site works alongside your new BD hire,a professional reference point to share during outreach and follow-up." },
             ].map(({ icon: Icon, t, d }) => (
               <Card key={t}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4 bg-zinc-50 border border-zinc-100">
@@ -534,11 +514,11 @@ export default function ProposalPage() {
 
         {/* ── 10 BRANDING ────────────────────────────────── */}
         <section>
-          <Label text="10 — Branding & Positioning" />
+          <Label text="10" />
           <H2>Presenting KLB at the Standard You Deserve</H2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              <p className="text-zinc-600 leading-relaxed text-[15px]">Your brand is the first impression — and in civil construction, first impressions determine whether a prospect picks up the phone or moves on.</p>
+              <p className="text-zinc-600 leading-relaxed text-[15px]">Your brand is the first impression,and in civil construction, first impressions determine whether a prospect picks up the phone or moves on.</p>
               <Card>
                 <h4 className="font-semibold text-zinc-900 mb-4">What We&apos;ll Deliver</h4>
                 <ul className="space-y-2.5">
@@ -550,7 +530,7 @@ export default function ProposalPage() {
               <h4 className="font-semibold text-zinc-900 mb-4">Positioning Statement</h4>
               <div className="p-5 rounded-xl mb-4" style={{ backgroundColor: K }}>
                 <p className="text-sm italic leading-relaxed text-zinc-300">
-                  &ldquo;KLB Consulting Group is Queensland&apos;s trusted partner for WHS compliance and ISO accreditation in civil construction. We embed ourselves in your business so compliance becomes a competitive advantage — not a burden.&rdquo;
+                  &ldquo;KLB Consulting Group is Queensland&apos;s trusted partner for WHS compliance and ISO accreditation in civil construction. We embed ourselves in your business so compliance becomes a competitive advantage,not a burden.&rdquo;
                 </p>
               </div>
               <div className="pt-3 border-t border-zinc-100">
@@ -567,20 +547,20 @@ export default function ProposalPage() {
 
         {/* ── 11 DELIVERABLES ────────────────────────────── */}
         <section>
-          <Label text="11 — Deliverables" />
+          <Label text="11" />
           <H2>Everything Included</H2>
           <div className="grid md:grid-cols-2 gap-5">
             <Card>
               <h4 className="font-semibold text-zinc-900 mb-1">Website & Digital Infrastructure</h4>
-              <Deliverable icon={Globe} title="Complete Website Build (7 pages)" desc="Home, About, Services, Industries, Capability Statement, Projects, and Contact — fully designed, developed, and deployed." />
+              <Deliverable icon={Globe} title="Complete Website Build (7 pages)" desc="Home, About, Services, Industries, Capability Statement, Projects, and Contact,fully designed, developed, and deployed." />
               <Deliverable icon={Search} title="SEO Foundations Package" desc="Keyword research, on-page optimisation, structured data, sitemap, Google Search Console, and Analytics integration." />
               <Deliverable icon={BarChart3} title="Analytics Dashboard Setup" desc="Google Analytics 4 configured with conversion tracking for forms, phone clicks, and document downloads." />
-              <Deliverable icon={Shield} title="Google Business Profile" desc="Setup, optimisation, and verification — maximising local search visibility in Queensland." />
+              <Deliverable icon={Shield} title="Google Business Profile" desc="Setup, optimisation, and verification,maximising local search visibility in Queensland." />
             </Card>
             <Card>
               <h4 className="font-semibold text-zinc-900 mb-1">Content & Brand Assets</h4>
               <Deliverable icon={FileText} title="Professional Website Copy" desc="All pages written in industry-appropriate language, optimised for both readers and search engines." />
-              <Deliverable icon={Award} title="Digital Capability Statement" desc="A formatted, downloadable capability statement page — ready for tender submission and client outreach." />
+              <Deliverable icon={Award} title="Digital Capability Statement" desc="A formatted, downloadable capability statement page,ready for tender submission and client outreach." />
               <Deliverable icon={Globe} title="Brand Asset Package" desc="Favicon, social preview images, email signature template, and brand colour/typography guide." />
               <Deliverable icon={BookOpen} title="Handover & Training" desc="Full handover documentation plus a 1-hour walkthrough so your team can manage the site independently." />
             </Card>
@@ -589,13 +569,13 @@ export default function ProposalPage() {
 
         {/* ── 12 TIMELINE ────────────────────────────────── */}
         <section>
-          <Label text="12 — Timeline" />
+          <Label text="12" />
           <H2>Two-Week Delivery Plan</H2>
           <div className="grid md:grid-cols-2 gap-10">
             <div>
-              <TimelineItem week="1" title="Week 1 — Discovery, Design & Content"
+              <TimelineItem week="1" title="Week 1,Discovery, Design & Content"
                 items={["Kickoff session: brand, goals, content review", "Keyword research and SEO brief", "Design mockups: home page and key pages", "Copy drafting: all 7 pages", "Design review and feedback round"]} />
-              <TimelineItem week="2" title="Week 2 — Build, Review & Launch" last
+              <TimelineItem week="2" title="Week 2,Build, Review & Launch" last
                 items={["Full website development", "Mobile optimisation and performance testing", "SEO implementation across all pages", "Analytics and Search Console setup", "Client review and amends", "Launch, Google submission, and handover"]} />
             </div>
             <div className="space-y-4">
@@ -620,16 +600,16 @@ export default function ProposalPage() {
 
         {/* ── 13 FUTURE GROWTH ───────────────────────────── */}
         <section>
-          <Label text="13 — Future Growth Opportunities" />
+          <Label text="13" />
           <H2>Where We Can Take This Next</H2>
-          <p className="text-zinc-500 mb-6 max-w-2xl leading-relaxed text-[15px]">The foundation we build now sets you up for everything below. None are required upfront — the architecture is designed to accommodate each without a rebuild.</p>
+          <p className="text-zinc-500 mb-6 max-w-2xl leading-relaxed text-[15px]">The foundation we build now sets you up for everything below. None are required upfront,the architecture is designed to accommodate each without a rebuild.</p>
           <div className="space-y-2.5">
             {[
-              { t: "Content Marketing & SEO Growth (Blog)", d: "A regular blog targeting industry-specific questions drives compounding search traffic and positions KLB consultants as genuine thought leaders. Each article builds domain authority — making every future piece rank faster." },
-              { t: "Victoria Market Expansion (Dedicated Landing Pages)", d: "When KLB expands into Victoria, dedicated location landing pages targeting Victorian civil contractors are added to the existing site — preserving Queensland rankings while capturing new state-level traffic." },
+              { t: "Content Marketing & SEO Growth (Blog)", d: "A regular blog targeting industry-specific questions drives compounding search traffic and positions KLB consultants as genuine thought leaders. Each article builds domain authority,making every future piece rank faster." },
+              { t: "Victoria Market Expansion (Dedicated Landing Pages)", d: "When KLB expands into Victoria, dedicated location landing pages targeting Victorian civil contractors are added to the existing site,preserving Queensland rankings while capturing new state-level traffic." },
               { t: "Paid Advertising (Google Ads / LinkedIn)", d: "Once the site converts organically, paid advertising can accelerate lead volume significantly. Google Ads targeting high-intent compliance search terms, or LinkedIn campaigns targeting safety managers at mid-sized civil contractors." },
               { t: "Email Marketing & Lead Nurture", d: "A capability statement download creates an email list of prospects in the evaluation phase. An automated email sequence keeping KLB top-of-mind converts more leads without additional outreach effort from your BD team." },
-              { t: "CRM Integration & Pipeline Tracking", d: "As lead volume grows, integrating the website with a CRM creates a full view of the pipeline — from first visit to signed contract. Your BD hire can manage all leads in one place without spreadsheets." },
+              { t: "CRM Integration & Pipeline Tracking", d: "As lead volume grows, integrating the website with a CRM creates a full view of the pipeline,from first visit to signed contract. Your BD hire can manage all leads in one place without spreadsheets." },
             ].map(item => <Accordion key={item.t} title={item.t} description={item.d} />)}
           </div>
         </section>
@@ -638,14 +618,14 @@ export default function ProposalPage() {
         <section>
           <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: K }}>
             <div className="p-8 md:p-12">
-              <Label text="14 — Optional Ongoing Support" />
+              <Label text="14" />
               <h2 className="text-3xl font-bold tracking-[-0.03em] text-white mb-4">Stay Ahead After Launch</h2>
               <p className="text-zinc-400 mb-10 max-w-xl leading-relaxed text-[15px]">A website at launch is a starting point. Optional ongoing support keeps your digital presence performing and improving as your business grows.</p>
               <div className="grid sm:grid-cols-3 gap-8">
                 {[
-                  { icon: BarChart3, t: "Monthly SEO Reporting", d: "Keyword rankings, traffic trends, and lead conversion data — with plain-English commentary on what to do next." },
+                  { icon: BarChart3, t: "Monthly SEO Reporting", d: "Keyword rankings, traffic trends, and lead conversion data,with plain-English commentary on what to do next." },
                   { icon: Globe, t: "Website Maintenance", d: "Regular updates, security monitoring, performance checks, and content updates as your services or team evolve." },
-                  { icon: TrendingUp, t: "Growth Marketing", d: "Content creation, Google Ads management, LinkedIn strategy, or email marketing — added as your goals grow." },
+                  { icon: TrendingUp, t: "Growth Marketing", d: "Content creation, Google Ads management, LinkedIn strategy, or email marketing,added as your goals grow." },
                 ].map(({ icon: Icon, t, d }) => (
                   <div key={t} className="flex gap-4">
                     <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border" style={{ borderColor: `${A}30`, backgroundColor: `${A}15` }}>
@@ -668,7 +648,7 @@ export default function ProposalPage() {
           <H2>Ready to Move Forward?</H2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <p className="text-zinc-600 leading-relaxed text-[15px] mb-8">We&apos;re ready to start as soon as you are. The two-week timeline begins from kickoff — and given your new BD team is onboarding now, earlier is better.</p>
+              <p className="text-zinc-600 leading-relaxed text-[15px] mb-8">We&apos;re ready to start as soon as you are. The two-week timeline begins from kickoff,and given your new BD team is onboarding now, earlier is better.</p>
               <div className="space-y-4">
                 {[
                   { n: "1", t: "Review this proposal and confirm you'd like to proceed" },
@@ -714,7 +694,7 @@ export default function ProposalPage() {
             </h2>
             <p className="text-zinc-500 max-w-xl mx-auto text-[15px] leading-relaxed">
               Dynamic Code works with operational businesses, hospitality groups, scalable startups, and
-              enterprise-focused brands across Australia — delivering custom technology, digital presence,
+              enterprise-focused brands across Australia,delivering custom technology, digital presence,
               and growth systems built for commercial outcomes.
             </p>
           </div>
@@ -751,7 +731,7 @@ export default function ProposalPage() {
           </div>
           <p className="text-center text-[11px] text-zinc-400 leading-relaxed max-w-2xl mx-auto">
             Starlink: integrated booking and workflow systems connected with Starlink order flows.
-            Not all engagements represent a direct client relationship — some reflect integration and build partnerships.
+            Not all engagements represent a direct client relationship,some reflect integration and build partnerships.
           </p>
 
           {/* Metrics strip */}
@@ -777,24 +757,24 @@ export default function ProposalPage() {
           <Divider />
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <Label text="Why Businesses Choose Us" />
+              <Label text="Why Us" />
               <h3 className="text-2xl md:text-3xl font-bold tracking-[-0.03em] mb-4" style={{ color: K }}>
                 Why Businesses Work With Dynamic Code
               </h3>
               <p className="text-zinc-500 text-[15px] leading-relaxed">
                 We sit at the intersection of technology, marketing, and operations. The systems we build
-                don&apos;t just look good — they generate pipeline, reduce manual work, and compound in value over time.
+                don&apos;t just look good,they generate pipeline, reduce manual work, and compound in value over time.
               </p>
             </div>
             <div className="space-y-2">
               {[
-                { t: "Custom Operational Systems", d: "Purpose-built software and integrations aligned to how your business actually runs — not generic tools bolted together." },
+                { t: "Custom Operational Systems", d: "Purpose-built software and integrations aligned to how your business actually runs,not generic tools bolted together." },
                 { t: "Scalable Technology Thinking", d: "Architecture designed to grow with you. We build foundations, not one-offs." },
                 { t: "Fast Development & Rollout", d: "Two-week delivery timelines for structured engagements. Speed without sacrificing quality." },
                 { t: "Marketing + Technology Combined", d: "Strategy, copy, design, and build under one roof. No agency handoffs, no misaligned outputs." },
-                { t: "SEO & Lead Generation Expertise", d: "We build websites that rank and convert — not just websites that exist." },
-                { t: "Workflow Automation & Integrations", d: "From booking systems to CRM pipelines — we connect your tools and eliminate manual process." },
-                { t: "Cross-Industry Operational Experience", d: "Hospitality, retail, construction, tech, beverage — we understand how operational businesses work." },
+                { t: "SEO & Lead Generation Expertise", d: "We build websites that rank and convert,not just websites that exist." },
+                { t: "Workflow Automation & Integrations", d: "From booking systems to CRM pipelines,we connect your tools and eliminate manual process." },
+                { t: "Cross-Industry Operational Experience", d: "Hospitality, retail, construction, tech, beverage,we understand how operational businesses work." },
               ].map(({ t, d }) => (
                 <div key={t} className="flex gap-3 p-3.5 rounded-xl hover:bg-zinc-50 transition-colors duration-150">
                   <span className="w-1 h-1 rounded-full mt-2 shrink-0" style={{ backgroundColor: A }} />
@@ -812,8 +792,8 @@ export default function ProposalPage() {
         <footer className="border-t border-zinc-100 py-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <DCLogo className="h-5 w-auto" />
           <div className="text-right">
-            <p className="text-xs text-zinc-400">Prepared for KLB Consulting Group · May 2026</p>
-            <p className="text-xs text-zinc-300 mt-0.5">Confidential — Not for distribution</p>
+            <p className="text-xs text-zinc-400">Prepared for KLB Consulting Group, May 2026</p>
+            <p className="text-xs text-zinc-300 mt-0.5">Confidential,Not for distribution</p>
           </div>
         </footer>
       </div>
