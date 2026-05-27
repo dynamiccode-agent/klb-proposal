@@ -1,50 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
-  --navy: #0F172A;
-  --navy-mid: #1E293B;
-  --slate: #334155;
-  --gold: #CA8A04;
-  --gold-light: #EAB308;
-  --bg: #F8FAFC;
-  --text: #020617;
-  --muted: #64748B;
-  --border: #E2E8F0;
+  --black: #09090B;
+  --black-mid: #18181B;
+  --black-soft: #27272A;
+  --accent: #FF0056;
+  --accent-dim: rgba(255, 0, 86, 0.12);
+  --accent-glow: rgba(255, 0, 86, 0.06);
   --white: #FFFFFF;
+  --off-white: #FAFAFA;
+  --gray-100: #F4F4F5;
+  --gray-200: #E4E4E7;
+  --gray-400: #A1A1AA;
+  --gray-500: #71717A;
+  --gray-700: #3F3F46;
+  --gray-900: #18181B;
+  --text: #09090B;
+  --muted: #71717A;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--bg);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--white);
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 @media print {
-  .no-print {
-    display: none !important;
-  }
-  .print-break {
-    page-break-before: always;
-  }
-  body {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
+  .no-print { display: none !important; }
+  body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  section { page-break-inside: avoid; }
 }
