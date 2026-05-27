@@ -356,6 +356,161 @@ export default function ProposalPage() {
           </div>
         </section>
 
+        {/* ── INDUSTRY EXPERIENCE ── */}
+        <section className="py-4">
+          {/* Divider */}
+          <div className="h-px w-full mb-16" style={{ background: `linear-gradient(to right, transparent, #E2E8F0, transparent)` }} />
+
+          <div className="text-center mb-12">
+            <SectionLabel text="Industry Experience" />
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-5"
+              style={{ color: NAVY, fontFamily: "Poppins, sans-serif" }}
+            >
+              Trusted Across Australia&apos;s<br />
+              <span style={{ color: GOLD }}>Leading Businesses</span>
+            </h2>
+            <p className="text-slate-500 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
+              Dynamic Code works with operational businesses, hospitality groups, scalable startups, and
+              enterprise-focused brands across Australia — delivering custom technology, digital presence,
+              and growth systems that make a measurable commercial difference.
+            </p>
+          </div>
+
+          {/* Logo Grid */}
+          <div className="mb-16">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-slate-100 border border-slate-100 rounded-2xl overflow-hidden">
+              {[
+                { name: "LMCT+", style: "font-black tracking-tight text-xl", category: "Automotive" },
+                { name: "Circl Group", style: "font-semibold tracking-wide text-base", category: "Hospitality" },
+                { name: "ChekkU", style: "font-bold tracking-tight text-lg", category: "Technology" },
+                { name: "Cunnies Gummies", style: "font-semibold text-sm tracking-wide", category: "FMCG" },
+                { name: "EBT", style: "font-black tracking-widest text-2xl", category: "Retail" },
+                { name: "Flipside", style: "font-bold italic text-lg tracking-tight", category: "Digital" },
+                { name: "XXXX Gold", style: "font-black tracking-widest text-base", category: "Beverage" },
+                { name: "Star Hotels", style: "font-semibold tracking-wider text-sm", category: "Hospitality" },
+                { name: "Lion", style: "font-black text-2xl tracking-tight", category: "Beverage" },
+                { name: "Value Liquor Group", style: "font-semibold text-xs tracking-wider", category: "Retail" },
+                { name: "Liquor Legends", style: "font-bold text-sm tracking-wide", category: "Retail" },
+                { name: "Starlink", style: "font-semibold tracking-wider text-base", category: "Infrastructure" },
+              ].map(({ name, style, category }) => (
+                <div
+                  key={name}
+                  className="bg-white flex flex-col items-center justify-center gap-2 py-7 px-4 group hover:bg-slate-50 transition-colors duration-200"
+                >
+                  <span
+                    className={`${style} text-center leading-tight`}
+                    style={{ color: "#94A3B8", letterSpacing: style.includes("widest") ? "0.15em" : undefined }}
+                  >
+                    {name}
+                  </span>
+                  <span
+                    className="text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                    style={{ color: GOLD, fontSize: "9px" }}
+                  >
+                    {category}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-xs text-slate-400 mt-4 leading-relaxed">
+              Starlink: integrated booking and workflow systems connected with Starlink order flows.
+              Not all engagements represent a direct client relationship — some reflect integration and build partnerships.
+            </p>
+          </div>
+
+          {/* Metrics Strip */}
+          <div
+            className="rounded-2xl px-8 py-10 mb-12"
+            style={{ backgroundColor: NAVY }}
+          >
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                { value: "20+", label: "Custom Systems & Integrations Delivered" },
+                { value: "8+", label: "Industries Served Across Australia" },
+                { value: "100%", label: "Australia-Wide Project Delivery" },
+                { value: "∞", label: "Scalable Web & Software Solutions" },
+              ].map(({ value, label }) => (
+                <div key={label}>
+                  <p
+                    className="text-3xl md:text-4xl font-bold mb-2"
+                    style={{ color: GOLD, fontFamily: "Poppins, sans-serif" }}
+                  >
+                    {value}
+                  </p>
+                  <p className="text-slate-400 text-xs leading-snug">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Why Businesses Work With Dynamic Code */}
+          <div className="grid md:grid-cols-2 gap-10 items-start">
+            <div>
+              <SectionLabel text="Why Businesses Choose Us" />
+              <h3
+                className="text-2xl md:text-3xl font-bold mb-4"
+                style={{ color: NAVY, fontFamily: "Poppins, sans-serif" }}
+              >
+                Why Businesses Work With<br />Dynamic Code
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed">
+                We sit at the intersection of technology, marketing, and operations — which means the systems we
+                build don&apos;t just look good. They generate pipeline, reduce manual work, and compound in value over time.
+              </p>
+            </div>
+            <div className="space-y-3">
+              {[
+                {
+                  title: "Custom Operational Systems",
+                  desc: "Purpose-built software and integrations aligned to how your business actually runs — not generic tools bolted together.",
+                },
+                {
+                  title: "Scalable Technology Thinking",
+                  desc: "Architecture designed to grow with you. We build foundations, not one-offs.",
+                },
+                {
+                  title: "Fast Development & Rollout",
+                  desc: "Two-week delivery timelines for structured engagements. Speed without sacrificing quality.",
+                },
+                {
+                  title: "Marketing + Technology Combined",
+                  desc: "Strategy, copy, design, and build under one roof. No agency handoffs. No misaligned outputs.",
+                },
+                {
+                  title: "SEO & Lead Generation Expertise",
+                  desc: "We build websites that rank and convert — not just websites that exist.",
+                },
+                {
+                  title: "Workflow Automation & Integrations",
+                  desc: "From booking systems to CRM pipelines, we connect your tools and eliminate manual process.",
+                },
+                {
+                  title: "Cross-Industry Operational Experience",
+                  desc: "Hospitality, retail, construction, tech, beverage — we understand how operational businesses work and build accordingly.",
+                },
+              ].map(({ title, desc }) => (
+                <div
+                  key={title}
+                  className="flex items-start gap-4 p-4 bg-white rounded-xl border hover:shadow-sm transition-shadow duration-200"
+                  style={{ borderColor: "#E2E8F0" }}
+                >
+                  <div
+                    className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: GOLD }}
+                  />
+                  <div>
+                    <p className="font-semibold text-sm mb-0.5" style={{ color: NAVY }}>{title}</p>
+                    <p className="text-xs text-slate-500 leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="h-px w-full mt-16" style={{ background: `linear-gradient(to right, transparent, #E2E8F0, transparent)` }} />
+        </section>
+
         {/* ── 2. UNDERSTANDING YOUR BUSINESS ── */}
         <section>
           <SectionLabel text="02 — Understanding Your Business" />
