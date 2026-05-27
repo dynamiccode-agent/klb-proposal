@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --navy: #0F172A;
+  --navy-mid: #1E293B;
+  --slate: #334155;
+  --gold: #CA8A04;
+  --gold-light: #EAB308;
+  --bg: #F8FAFC;
+  --text: #020617;
+  --muted: #64748B;
+  --border: #E2E8F0;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-break {
+    page-break-before: always;
+  }
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
